@@ -3,7 +3,18 @@ Sprints last for 2 weeks. There are daily rituals that occur during this time, n
 
 During development, a developer should be keeping careful watch of their assigned stories that are currently in testing. They are accountable for those items and should follow-up with the QA tester so it does not become an impediment.
 
-## If you complete items sooner than expected, what should you work on?
+## Daily Stand-up
+The daily stand-up is a way to allow for easy communication between scrum members. The ceremony has three main questions to be answered:
+
+1. What did I complete yesterday?
+2. What do I plan to complete today?
+3. Will I run into any impediments?
+
+It allows developers to communicate with other developers if they need help on something. It also allows developers to communicate with the scrum master on impediments so they can try and get them resolved as quickly as possible.
+
+## Questions and Answers
+
+### If you complete items sooner than expected, what should you work on?
 Sometimes it happens, we plan out a sprint and because you are a rockstar, you get done early! But now what? Should I twiddle my thumbs until the sprint is over? Luckily, we have a list just for this!
 
 1. **See if there are any outstanding code reviews you can help out on.**
