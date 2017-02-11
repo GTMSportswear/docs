@@ -6,7 +6,7 @@ This information can be updated quite often, but is all peer reviewed. If you se
 ## The Development Process
 
 * [Agile Scrum - Overview](scrum)
-* [Planning](scrum/planning.md)
+* [Scrum Process](scrum/process.md)
 * [Sprint Development](scrum/sprints.md)
 
 

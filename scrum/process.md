@@ -1,4 +1,4 @@
-# Scrum Planning Process
+# Scrum Process
 ![Scrum roles](../images/scrum-process.png)
 
 ## Ideation
@@ -33,34 +33,5 @@ Ideally, user stories should go through two refinement meetings before developme
 
 Be careful not to **overplan**. User stories should have just enough planning to get started on development. It is okay to have some unanswered questions during the sprint **collaboration between a developer and stakeholder is encouraged**.
 
-## Planning
-The planning meeting is a time-boxed meeting for the scrum team to get in the same room and decide which user stories they are going to work on for the sprint.
-
-User stories and their tasks should be assigned to individual developers to be worked on. Developers should have a good idea of what they would want to work on based on expertise.
-
-During planning, if there is significant rollover of stories from the previous sprint, it may be necessary to move out other user stories at this time and wait for another refinement to re-prioritize the backlog.
-
-**The goals of the planning meeting:**
-1. Determine capacity of user stories to be worked on, do not allow any overage.
-2. If there are any rollover stories from the previous sprint, move out the lowest priority items to make room for them to be worked on first.
-3. Assign user stories and tasks to developers.
-
-**When does this meeting occur?** The first Monday of a sprint.
-
 ## Sprint Development
 See [Sprints](sprints.md).
-
-## Review
-The review is a meeting when the entire scrum team, plus any extra parties, come together to share and demo work that has been completed in the sprint.
-
-**When does this meeting occur?** The final day of the sprint, usually in the afternoon.
-
-## Retrospective
-This meeting is a time for the entire scrum team to come together to reflect upon the sprint.
-
-* What went well?
-* What could have gone better?
-* What should we work on getting better at next sprint?
-* What should we add to the kaizen?
-
-**When does this meeting occur?** The final day of the sprint, usually in the afternoon right after the sprint review.
