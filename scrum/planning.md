@@ -48,19 +48,7 @@ During planning, if there is significant rollover of stories from the previous s
 **When does this meeting occur?** The first Monday of a sprint.
 
 #### Sprint Development
-Sprints last for 2 weeks. There are daily rituals that occur during this time, namely the daily stand-up and completing assigned user stories.
-
-During development, a developer should be keeping careful watch of their assigned stories that are currently in testing. They are accountable for those items and should follow-up with the QA tester so it does not become an impediment.
-
-**If you complete items sooner than expected, what should you work on?**
-Sometimes it happens, we plan out a sprint and because you are a rockstar, you get done early! But now what? Should I twiddle my thumbs until the sprint is over? Luckily, we have a list just for this!
-
-1. **See if there are any outstanding code reviews you can help out on.**
-2. **See if there are other user stories that you can help out on.** Stories that have not been started yet are the highest priority, followed by items that are partially done. *Be careful!* Do not interrupt somebody's workflow as they may be unwelcoming to an interruption; they are trying to complete their work for the sprint as well.
-3. **Technical Debt Backlog items.**
-4. **Look at error logs** to see if anything is getting past our radar.
-5. **Research and reading** on newest happenings and trends in the industry. Try something new!
-6. **Pull from next sprint.** Contact the scrum master and pull things off next sprint.
+[Sprints](sprints.md)
 
 #### Review
 The review is a meeting when the entire scrum team, plus any extra parties, come together to share and demo work that has been completed in the sprint.
@@ -76,57 +64,3 @@ This meeting is a time for the entire scrum team to come together to reflect upo
 * What should we add to the kaizen?
 
 **When does this meeting occur?** The final day of the sprint, usually in the afternoon right after the sprint review.
-
-
-### Scrum Artifacts (Glossary)
-
-#### Sprint
-A sprint is length of time in which a team has to work on a set of user stories. **Our sprints last 2 weeks.**
-
-#### User Story
-A user story is a short description of customer's need.
-
-The user story describes the type of user, what they want and why. A user story helps to create a simplified description of a requirement.
-
-A user story must represent value to a customer, ultimately resulting in perceived revenue to the business.
-
-Examples of user stories:
-* As a user, I want this, because I'm awesome
-
-Examples of bad user stories:
-> As a user I want to be able to manage products, so that I can remove expired and erroneous products.
-
-The reason this user story is bad is not because it lacks the three main criteria, but instead it lacks a focused user. We cannot generalize a *user* to simply a user of our site, but instead would focus on a persona. In this case, our user would be a "marketing content manager." This persona then would establish the correct business owner to reach out to.
-
-> As a developer I want to update the CMS product page, so that I have a more maintainable code for futher development.
-
-This is a perfect example of technical debt. While technical debt should be worked on every sprint, it doesn't deliver value to a customer, and therefor not defined as a user story. Instead, it should be apart of a separate but equally important, technical debt backlog.
-
-*See further examples on [Scrum Alliance](https://www.scrumalliance.org/community/articles/2011/august/5-common-mistakes-we-make-writing-user-stories).*
-
-#### Acceptance Criteria
-A user story needs a set of criteria to be tested upon in order to be accepted as done. This set should be finite and specific. This is aptly named *acceptance criteria*.
-
-To setup this criteria, we use a form called *Given-When-Then* which outlines the specific form in which it should be written.
-
-> **GIVEN** a category results page,
-
-> **WHEN** the products are initially loaded,
-
-> **THEN** any products that have the feature flag need to be displayed first.
-
-#### Definition of Done
-*To be added.*
-
-#### Impediment
-Any blocker or issues that will keep a developer from completing their assigned stories and/or tasks.
-
-Examples of impediments:
-* Waiting on questions to be answered by a stakeholder before more work can be completed.
-* A build process is holding up the release of code.
-* A story which relies on another piece of code to be completed first is not yet done.
-
-#### Bugs and Defects
-**Bugs** are issues that arise from QA on stories *before they affect customers*.
-
-**Defects** are issues that arise and *are currently affecting customers*.
