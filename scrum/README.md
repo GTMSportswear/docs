@@ -15,7 +15,7 @@ A business owner has a shared responsibility to the team and to the customer. Th
 ### Scrum Master
 A scrum master is the glue that ties a scrum team together. Scrum masters are responsible for keeping people clear on their roles, managing the rituals and artifacts of scrum, and coaching people within the team and across the organization to help overcome blockers and maintain a sustainable productive pace.
 
-Their responsibilities include the daily stand-up, the [sprint planning](#Planning) meeting, the [sprint review](#Review) meeting with stakeholders, and the [sprint retrospective](#Retrospective) meeting.
+Their responsibilities include the daily stand-up, the [sprint planning](planning.md#planning) meeting, the [sprint review](planning.md#review) meeting with stakeholders, and the [sprint retrospective](planning.md#planning#retrospective) meeting.
 
 ### Developer
 Most scrum teams consist of a set of four to eight members. Their specializations should be planned to support the type of work the team is going to be responsible for, so they can estimate it well and produce results that meet the team's definition of done.
