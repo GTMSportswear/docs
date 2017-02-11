@@ -38,7 +38,7 @@ The planning meeting is a time-boxed meeting for the scrum team to get in the sa
 
 User stories and their tasks should be assigned to individual developers to be worked on. Developers should have a good idea of what they would want to work on based on expertise.
 
-During planning, if there is significant rollover of stories from the previous sprint, it may be necessary to move out other user stories at this time and wait for another refinement to reprioritize the backlog.
+During planning, if there is significant rollover of stories from the previous sprint, it may be necessary to move out other user stories at this time and wait for another refinement to re-prioritize the backlog.
 
 **The goals of the planning meeting:**
 1. Determine capacity of user stories to be worked on, do not allow any overage.
@@ -48,7 +48,7 @@ During planning, if there is significant rollover of stories from the previous s
 **When does this meeting occur?** The first Monday of a sprint.
 
 ## Sprint Development
-[Sprints](sprints.md)
+See [Sprints](sprints.md).
 
 ## Review
 The review is a meeting when the entire scrum team, plus any extra parties, come together to share and demo work that has been completed in the sprint.

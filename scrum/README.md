@@ -25,10 +25,10 @@ A team member is responsible for the quality of the product being developed, and
 The team is expected to *push back against any attempts to sacrifice quality for the sake of speed*, given the practical constraints of the project. Additionally, the team should be tracking the overall quality of the code-base, and proposing stories that would refactor the existing code to enhance maintainability, or to support emerging technical standards. Keeping the code clean, self-documenting, and internally consistent helps everyone on the team work together more effectively.
 
 ## Scrum Process
-[Process](process.md)
+See [Process](process.md).
 
 ## Scrum Sprints
-[Sprints](sprints.md)
+See [Sprints](sprints.md).
 
 ## Scrum Artifacts (Glossary)
 
