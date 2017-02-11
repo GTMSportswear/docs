@@ -53,5 +53,6 @@ Sometimes it happens, we plan out a sprint and because you are a rockstar, you g
 5. **Research and reading** on newest happenings and trends in the industry. Try something new!
 6. **Pull from next sprint.** Contact the scrum master and pull things off next sprint.
 
-## Sprint Process
+## Scrum Process
+See [Scrum Process](process.md)
 ![Scrum roles](../images/scrum-process.png)
