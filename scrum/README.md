@@ -42,10 +42,14 @@ The user story describes the type of user, what they want and why. A user story 
 
 A user story must represent value to a customer, ultimately resulting in perceived revenue to the business.
 
-Examples of user stories:
-* As a user, I want this, because I'm awesome
+#### Examples of user stories
+> As a sales rep configurator user, I want to be informed of new features and updates, so that I can actively use the new features when they are released.
 
-Examples of bad user stories:
+> As a gtmsportswear.com shopper, I want to be able to find a product quickly so that I can view the product details.
+
+> As a GTM Sportswear account holder, I want my login details encrypted, so that I know my information is safe and secure.
+
+#### Examples of bad user stories
 > As a user I want to be able to manage products, so that I can remove expired and erroneous products.
 
 The reason this user story is bad is not because it lacks the three main criteria, but instead it lacks a focused user. We cannot generalize a *user* to simply a user of our site, but instead would focus on a persona. In this case, our user would be a "marketing content manager." This persona then would establish the correct business owner to reach out to.
