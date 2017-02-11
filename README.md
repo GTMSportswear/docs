@@ -5,7 +5,7 @@ This information can be updated quite often, but is all peer reviewed. If you se
 
 ## The Development Process
 
-* [Agile Scrum - Overview](scrum/README.md)
+* [Agile Scrum - Overview](scrum)
 * [Planning](scrum/planning.md)
 * [Sprint Development](scrum/sprints.md)
 
