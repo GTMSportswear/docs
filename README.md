@@ -9,6 +9,7 @@ This information can be updated quite often, but is all peer reviewed. If you se
 * [Scrum Process](process/process.md)
 * [Sprint Development](process/sprints.md)
 * [Feature Toggles](process/feature-toggles.md)
+* [Technical Debt](process/technical-debt.md)
 
 
 ## Coding Standards

@@ -87,6 +87,12 @@ Examples of impediments:
 
 **Defects** are issues that arise and *are currently affecting customers*.
 
+### Feature Toggles
+See [Feature Toggles](feature-toggles.md).
+
+### Technical Debt
+See [Technical Debt](technical-debt.md).
+
 ## Sources
 * Green, M. D. (2016). *Scrum: Novice to Ninja*. Victoria, Australia: Sitepoint.
 * Kaczor, K. (2011, August 3). 5 Common Mistakes We Make Writing User Stories. Retrieved February 11, 2017, from [https://www.scrumalliance.org/community/articles/2011/august/5-common-mistakes-we-make-writing-user-stories]()
