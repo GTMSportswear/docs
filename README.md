@@ -6,8 +6,9 @@ This information can be updated quite often, but is all peer reviewed. If you se
 ## The Development Process
 
 * [Agile Scrum - Overview](scrum)
-* [Scrum Process](scrum/process.md)
-* [Sprint Development](scrum/sprints.md)
+* [Scrum Process](process/process.md)
+* [Sprint Development](process/sprints.md)
+* [Feature Toggles](process/feature-toggles.md)
 
 
 ## Coding Standards
