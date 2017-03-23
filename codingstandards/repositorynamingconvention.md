@@ -1,4 +1,4 @@
-# Repository Naming Conventions
+# Repository Naming Convention
 All data access should be done through a repository class.  These classes should follow a specific
 naming convention to help callers better understand the functionality available.
 

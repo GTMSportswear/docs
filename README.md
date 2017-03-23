@@ -16,7 +16,7 @@ This information can be updated quite often, but is all peer reviewed. If you se
 
 * [C# & JavaScript](/#)
 * [SQL](/#)
-* [Repository Naming Conventions](/codingstandards/respositorynamingconventions.md)
+* [Repository Naming Conventions](/codingstandards/repositorynamingconvention.md)
 
 ## New Employee Information
 *To be added.*
