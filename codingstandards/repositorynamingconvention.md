@@ -64,21 +64,21 @@ The `Create` method is used only in the case that the caller knows this should b
 If a natural identifier is available, then this method will throw a `DuplicateRecordException`
 if the identifier is already defined in the system.
 
-For more information, see [General Data Modification](#generaldatamodification).
+For more information, see [General Data Modification](#general-data-modification).
 
 ### Update
 The `Update` method is used only in the case that the caller knows this object should
 already exist.  Since the caller is explicitly requesting an update, the type must have a natural identifier.
 If that identifier is not found, then this method will throw a `RecordNotFoundException`.
 
-For more information, see [General Data Modification](#generaldatamodification).
+For more information, see [General Data Modification](#general-data-modification).
 
 ### Save
 The `Save` method combines the logic of `Create` and `Update`,
 essentially performing the `Create` if it doesn't exist, and `Update` if it does.
 As such, `Save` is only appropriate when dealing with objects that have a natural identifier.
 
-For more information, see [General Data Modification](#generaldatamodification).
+For more information, see [General Data Modification](#general-data-modification).
 
 ### Remove
 `Remove` methods need to accept a unique identifier as the parameter(s).  It should truly remove the object
@@ -95,7 +95,7 @@ were previously deleted.
 the number of optional parameters, and whether pagination is necessary.  Because of this, the standard
 on what the signature should look like and proper interaction with it is yet to be defined.
 
-### General Data Modification<a name="generaldatamodification"></a>
+### General Data Modification
 There are 3 main methods for data modification: `Create`, `Update`, and `Save`.
 If the type modified in these methods contains system-generated values,
 such as IDs or time stamps in the database, then this method can return a new copy
