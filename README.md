@@ -11,11 +11,12 @@ This information can be updated quite often, but is all peer reviewed. If you se
 * [Feature Toggles](process/feature-toggles.md)
 
 
-## Coding Standards
+## [Coding Standards](/codingstandards)
 *To be added.*
 
 * [C# & JavaScript](/#)
 * [SQL](/#)
+* [Repository Naming Conventions](/codingstandards/respositorynamingconventions.md)
 
 ## New Employee Information
 *To be added.*
