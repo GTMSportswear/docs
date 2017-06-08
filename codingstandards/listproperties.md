@@ -20,15 +20,22 @@ Here is an example of how to **not** validate the entries of a list.
 Note the list property, `Attributes`, correctly defined as a read-only property as `IList<string>`.
 
 ```csharp
+[DataContract]
 public class Example
 {
-   public string Property { get; }
+   public string Property => property;
 
-   public IList<string> Attributes { get; } = new List<string>();
+   public IList<string> Attributes => attributes;
+
+   [DataMember]
+   private string property;
+
+   [DataMember]
+   private IList<string> attributes = new List<string>();
 
    public Example(string property)
    {
-      Property = property;
+      this.property = property;
    }
 }
 ```
@@ -73,15 +80,22 @@ To solve this problem we are introducing a generic `VerifiedList` that simply ac
 In our above example, we just wanted to ensure `Attributes` did not have any null or empty values.  We simply change the type of the property.
 
 ```csharp
+[DataContract]
 public class Example
 {
-   public string Property { get; }
+   public string Property => property;
 
-   public IList<string> Attributes { get; } = new NonEmptyStringList();
+   public IList<string> Attributes => attributes;
+
+   [DataMember]
+   private string property;
+
+   [DataMember]
+   private IList<string> attributes = new NonEmptyStringList();
 
    public Example(string property)
    {
-      Property = property;
+      this.property = property;
    }
 }
 ```
@@ -91,19 +105,24 @@ public class Example
 What the above solution is **not** is a way to verify the objects themselves within a list.  For example, if my `Order` class will have a list property named `Lines` containing a list of `OrderLine` objects, the contents of `OrderLine` is not verified as each is added to the list, but rather as the `OrderLine` is created, just like any other type.
 
 ```csharp
+[DataContract]
 public class OrderLine
 {
-   public string ProductId { get; }
+   public string ProductId => productId;
 
-   public int Quantity { get; }
+   public int Quantity => quantity;
+
+   [DataMember]
+   private string productId;
+   private int quantity;
 
    public OrderLine(string productId, int quantity)
    {
       ParameterVerifier.VerifyIsNotNullOrEmpty(productId, nameof(productId));
       ParameterVerifier.VerifyIsAtLeast(quantity, 1, nameof(quantity));
 
-      ProductId = productId;
-      Quantity = quantity;
+      this.productId = productId;
+      this.quantity = quantity;
    }
 }
 ```
@@ -111,18 +130,25 @@ public class OrderLine
 The above `OrderLine` type can then be placed into a list property, but the list does not necessarily need to be constrained.  However, it *may* be appropriate to use the `NonNullList` for order lines, but perform the validation of the order line itself in the constructor of the `OrderLine` type like in the above code block.
 
 ```csharp
+[DataContract]
 public class Order
 {
-   public string CustomerId { get; }
+   public string CustomerId => customerId;
+
+   public IList<OrderLine> Lines => lines;
+
+   [DataMember]
+   private string customerId;
 
    // Note the use of NonNullList here.
-   public IList<OrderLine> Lines { get; } = new NonNullList<OrderLine>();
+   [DataMember]
+   private IList<OrderLine> lines = new NonNullList<OrderLine>();
 
    public Order(string customerId)
    {
       ParameterVerifier.VerifyIsNotNullOrEmpty(customerId, nameof(customerId));
 
-      CustomerId= customerId;
+      this.customerId= customerId;
    }
 }
 ```
