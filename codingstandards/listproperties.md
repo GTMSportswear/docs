@@ -37,7 +37,7 @@ Lets say the `Attributes` list should not contain any null or empty values.
 Before performing an operation, we may want to validate the `Attributes` property
 so we can throw an appropriate `ArgumentException`.
 
-**Incorect Approach**
+**Incorrect Approach**
 
 ```csharp
 public void SaveExample(Example example)
