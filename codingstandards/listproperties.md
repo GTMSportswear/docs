@@ -87,10 +87,10 @@ public class Example
 
    public IList<string> Attributes => attributes;
 
-   [DataMember]
+   [DataMember(Name = "Property")]
    private string property;
 
-   [DataMember]
+   [DataMember(Name = "Attributes")]
    private IList<string> attributes = new NonEmptyStringList();
 
    public Example(string property)
@@ -112,8 +112,10 @@ public class OrderLine
 
    public int Quantity => quantity;
 
-   [DataMember]
+   [DataMember(Name = "ProductId")]
    private string productId;
+
+   [DataMember(Name = "Quantity")]
    private int quantity;
 
    public OrderLine(string productId, int quantity)
@@ -137,18 +139,18 @@ public class Order
 
    public IList<OrderLine> Lines => lines;
 
-   [DataMember]
+   [DataMember(Name = "CustomerId")]
    private string customerId;
 
    // Note the use of NonNullList here.
-   [DataMember]
+   [DataMember(Name = "Lines")]
    private IList<OrderLine> lines = new NonNullList<OrderLine>();
 
    public Order(string customerId)
    {
       ParameterVerifier.VerifyIsNotNullOrEmpty(customerId, nameof(customerId));
 
-      this.customerId= customerId;
+      this.customerId = customerId;
    }
 }
 ```
