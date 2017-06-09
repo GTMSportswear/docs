@@ -1,8 +1,6 @@
 # List Properties
 
-Many types, especially data structures, will contain properties of a list type,
-such as `IList<T>` or `IReadOnlyList<T>`.  List properties should be implemented
-under the following guidelines, especially `public` properties.
+Many types, especially data structures, will contain properties of a list type, such as `IList<T>` or `IReadOnlyList<T>`.  List properties should be implemented under the following guidelines, especially `public` properties.
 
 - The list property itself should be read-only.
 - The list property should be initialized to a new instance when the containing data structure is constructed.
@@ -11,13 +9,9 @@ under the following guidelines, especially `public` properties.
 
 ## Validation
 
-As with any type, validation of the input should be performed as early as possible.
-In most cases, this can be accomplished in the constructor of the class.
-In the cases of lists, however, when a list is expected to only contain certain values,
-validation needs to occur as values are added, inserted, or set using an indexer.
+As with any type, validation of the input should be performed as early as possible.  In most cases, this can be accomplished in the constructor of the class.  In the cases of lists, however, when a list is expected to only contain certain values, validation needs to occur as values are added, inserted, or set using an indexer.
 
-Here is an example of how to **not** validate the entries of a list.
-Note the list property, `Attributes`, correctly defined as a read-only property as `IList<string>`.
+Here is an example of how to **not** validate the entries of a list.  Note the list property, `Attributes`, correctly defined as a read-only property as `IList<string>`.
 
 ```csharp
 [DataContract]
@@ -40,9 +34,7 @@ public class Example
 }
 ```
 
-Lets say the `Attributes` list should not contain any null or empty values.
-Before performing an operation, we may want to validate the `Attributes` property
-so we can throw an appropriate `ArgumentException`.
+Lets say the `Attributes` list should not contain any null or empty values.  Before performing an operation, we may want to validate the `Attributes` property so we can throw an appropriate `ArgumentException`.
 
 **Incorrect Approach**
 
@@ -66,12 +58,9 @@ public void SaveExample(Example example)
 }
 ```
 
-Again, the desired way to handle this is to throw the exception as early as possible.
-The way to accomplish this is to throw an exception as values are added to the `Attributes` list.
-The above method, then, can assume all values in `Attributes` have been verified rather than performing its own validation.
+Again, the desired way to handle this is to throw the exception as early as possible.  The way to accomplish this is to throw an exception as values are added to the `Attributes` list.  The above method, then, can assume all values in `Attributes` have been verified rather than performing its own validation.
 
-One way to accomplish this is to create a custom list for every data structure such as an AttributeList, OrderLineList, and AddressList.
-Of course, this can get fairly tedious, and we want that to be the exception rather than the rule.
+One way to accomplish this is to create a custom list for every data structure such as an AttributeList, OrderLineList, and AddressList.  Of course, this can get fairly tedious, and we want that to be the exception rather than the rule.
 
 ## The Solution
 
