@@ -9,7 +9,7 @@ This information can be updated quite often, but is all peer reviewed. If you se
 * [Scrum Process](process/process.md)
 * [Sprint Development](process/sprints.md)
 * [Feature Toggles](process/feature-toggles.md)
-* [Deployment](deployment/Rules-Publish-TST-To-PRD.md)
+* [Deployments](deployments/Rules-Publish-TST-To-PRD.md)
 
 ## [Coding Standards](/codingstandards)
 *To be added.*
