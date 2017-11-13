@@ -9,5 +9,5 @@
 1. TypeScript Api Services
 1. TypeScript Utilities
   1. Solution Utilities
-  1. GitHub Utilies
+  1. GitHub Utilities
 1. QUnit Testing
