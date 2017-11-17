@@ -1,4 +1,4 @@
-# GTMSportswear Javascript Coding Standards
+# GTMSportswear Javascript/TypeScript Coding Standards
 
 *GTMSportswear approach to Javascript*
 
