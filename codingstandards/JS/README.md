@@ -8,7 +8,8 @@
 1. [TypeScript Compilation](#typescript-compilation)
 1. [TypeScript Entry Points](https://github.com/GTMSportswear/docs/blob/master/codingstandards/JS/typescriptentrypoints.md)
 1. [TypeScript Modules](#typescript-modules)
-1. TypeScript Api Services
+1. [Retrieving Data](#retrieving-data)
+1. Documentation Comments
 1. TypeScript Utilities
   1. Solution Utilities
   1. GitHub Utilities
@@ -59,6 +60,36 @@ export class SomeClass {
   - e.g. `private CalculateSalesTax(): number`
 - We use PascalCase for all public properties.
   - e.g. `public WasClicked: boolean`
-- We use camelCase for all private properties as well as local variables.
+- We use camelCase for all private properties as well as local variables and local functions.
   - e.g. `private container: Element`
   - e.g. `const numClicks = 0`
+  - e.g. `function countWordAddresses(addresses: Address[]): number`
+
+## Retrieving Data
+Every front end application needs some way to retrieve and send data in order for it to be useful.
+
+### Ajax Module
+We have our own in-house module that we use to make ajax calls to http endpoints.
+[js-xhr](https://github.com/GTMSportswear/js-xhr)
+
+This is already included in all of our major web properties as a JSPM package.
+
+### API Access Points
+We currently follow a pattern of putting access to each API endpoint into its own method inside of a class specific to the API being used.
+
+For example, if we were accessing api.gtmsportswear.com, we could create a class called `GtmApiService` that looked like this:
+```ts
+import { ajax, AjaxRequest } from '../github/js-xhr/js-xhr';
+
+export class GtmApiService {
+  public GetSalesTax(total: number, state: string): Promise<number> {
+    // Do api call here using the ajax module import.
+  }
+
+  public SaveAddress(address: Address): Promise<void> {
+    // Do api call here.
+  }
+}
+```
+
+In order to keep all our api access points in a centralized location, we are moving toward a pattern in which every front end repository has a `services` folder in which each api access class is stored as its own file.
