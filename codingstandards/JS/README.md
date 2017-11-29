@@ -4,14 +4,15 @@
 
 ## Table of Contents
 
-1. [Why TypeScript?](#why-typescript?)
+1. [Why TypeScript?](#why-typescript)
 1. [TypeScript Compilation](#typescript-compilation)
 1. [TypeScript Entry Points](https://github.com/GTMSportswear/docs/blob/master/codingstandards/JS/typescriptentrypoints.md)
-1. TypeScript Modules
+1. [TypeScript Modules](#typescript-modules)
 1. TypeScript Api Services
 1. TypeScript Utilities
   1. Solution Utilities
   1. GitHub Utilities
+1. Asynchronous TypeScript
 1. Unit Testing
 1. Integration Testing
 
@@ -38,3 +39,26 @@ See [TypeScript Entry Points](typescriptentrypoints.md)
 
 ## TypeScript Modules
 As with all companies, we strive to maintain a code base that is clean and easy to change. With that in mind, we try to break all FE code into individual modules. TypeScript gives us several ways to break code into modules using _individual files_, _the `module` keyword_, or _the `class` keyword_.
+
+A simple TypeScript module file begins with some `import { ... } from '..'` statements. Then you will find a line that looks like this:
+
+```ts
+export class SomeClass {
+  // Declare class info here.
+
+  // Most general purpose display classes have an Output() method.
+  public Output(): Promise<Element> {
+    // This is an example of a method that returns an HTML element to its consumer by way of a Promise.
+  }
+}
+```
+
+### Method and Property Naming Convention
+- We use PascalCase for all method names inside of a class, whether public or private.
+  - e.g. `public Output(): void`
+  - e.g. `private CalculateSalesTax(): number`
+- We use PascalCase for all public properties.
+  - e.g. `public WasClicked: boolean`
+- We use camelCase for all private properties as well as local variables.
+  - e.g. `private container: Element`
+  - e.g. `const numClicks = 0`
