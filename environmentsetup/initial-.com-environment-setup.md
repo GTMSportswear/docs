@@ -2,7 +2,7 @@
 
 1.	Install Visual Studio 2017 with the correct components included.
     1.	Download Visual studio Professional 2017 here: https://www.visualstudio.com/downloads/.
-    1.  During the installation process you can select additional components to include with the Visual Studio core editor. Don't deselect any components selected by default.
+    1.  The Visual Studio installer will direct you to an **Installing Visual Studio** screen. You can select additional components to include with the Visual Studio core editor. Don't deselect any components selected by default.
     1.	Make sure the following are selected under the Workloads tab
         *	.NET desktop development
         *	Desktop development with C++
