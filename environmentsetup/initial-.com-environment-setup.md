@@ -28,12 +28,23 @@
     1.	Click the **manage connections Icon** and select **Connect to a Project** in the dropdown.   
     1.	From the new view you can select the **gtm ->> gtm** project and clone it to a destination of your choice (It is helpful to keep all your projects in one Repos folder).
     1.  Once the project has finished downloading, it will be automatically selected and appear in the Solution Explorer.
-    1.  Double click on **GTMSportswear** in the **Solution Explorer**  
+    1.  Double click on **GTMSportswear** in the **Solution Explorer**.
 
 4.	Next you will want to remove Gtm.Web from the list of projects to build while debugging. This is because Gtm.Web has not been configured to ignore Typescript files while building, resulting in build errors. 
-    1.	In Visual Studio go to **Build ->>  Configuration Manager**
-    1.	Deselect build for Gtm.Web
+    1.	In Visual Studio go to **Build ->>  Configuration Manager** (Build is a tab along the top of Visual Studio).
+    1.	Deselect build for **Gtm.Web**.
 
 5.	By default, Windows may prevent Visual Studio’s emulator from displaying the website through localhost. This problem can be fixed by changing a setting through Window’s control panel.
-    1.	Go to **Control Panel ->> Programs ->> Programs and Features ->> Turn Windows features on or off ->> Internet Information Services**
-    1.	Activate **Internet Information Services**
+    1.	Go to **Control Panel ->> Programs ->> Programs and Features ->> Turn Windows features on or off ->> Internet Information Services**.
+    1.	Activate **Internet Information Services**.
+    
+6.  The GTMSportswear project has several web dependancies that are not tracked through source control. This is because they can be easily installed in your local environment with npm. 
+    1. Open Window's command prompt and change the working directory to **<gtm repository>\GTMSportswear.com**. 
+    1. Run **npm install**.
+    1. If Grunt is not installed, run **npm install grunt --save-dev**.
+    1. Install the Grunt command line interface globally with **npm install -g grunt-cli**.
+    1. Install the Karma command line interface globally with **npm install -g karma-cli**.
+   
+7.  Finally, check to see that the GTM website can be emulated through the Visual Studio debugger. 
+    1. Run **grunt** from the command line.
+    1. From Visual Studio press **F5** or alternately press the **green play button** at the top-center of Visual Studio.
