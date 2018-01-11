@@ -2,7 +2,7 @@
 
 ### Install Visual Studio 2017
 
-It is important to make sure the correct components are included.
+It's important to make sure the correct components are included with your Visual Studio installation. If any components are missed during the installation process you can reopen the installer to modify your installation, while adding the components.
 1.	Download Visual studio Professional 2017 here: https://www.visualstudio.com/downloads/.
 1.  The Visual Studio installer will direct you to an **Installing Visual Studio** screen. You can select additional components to include with the Visual Studio core editor. Don't deselect any components selected by default.
 1.	Make sure the following are selected under the **Workloads** tab of the **Installing Visual Studio** screen
@@ -57,7 +57,7 @@ The GTMSportswear project has several web dependancies that are not tracked thro
 1. Install the Grunt command line interface globally with **npm install -g grunt-cli**.
 1. Install the Karma command line interface globally with **npm install -g karma-cli**.
    
-### Run Emulator
+### Run the Emulator
 
 Finally, check to see that the GTM website can be emulated through the Visual Studio debugger.
 1. Run **grunt** from the command line.
