@@ -46,6 +46,7 @@ Next you will want to remove **Gtm.Web** from the list of projects to build whil
 By default, Windows may prevent Visual Studio’s emulator from displaying the website through localhost. This problem can be fixed by changing a setting through Window’s control panel.
 1.	Go to **Control Panel ->> Programs ->> Programs and Features ->> Turn Windows features on or off ->> Internet Information Services**.
 1.	Activate **Internet Information Services**.
+![Screenshot Cannot Display](../images/SetupComWindowsSettingFix.png "Visual of Window's setting that must be changed")
     
 ### Install Web Dependancies
 
