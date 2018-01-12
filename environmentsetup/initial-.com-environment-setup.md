@@ -56,7 +56,7 @@ The GTMSportswear project has several web dependancies that are not tracked thro
 1. Install the Grunt command line interface globally with **npm install -g grunt-cli**.
 1. Install the Karma command line interface globally with **npm install -g karma-cli**.
    
-### Run the Emulator
+### Run in Debug Mode
 
 Finally, check to see that the GTM website runs in localhost through the Visual Studio debugger.
 1. Run **grunt** from the command line.
