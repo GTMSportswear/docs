@@ -22,6 +22,8 @@ Once Visual Studio 2017 has been successfully installed, a Visual Studio Team Se
 1.	Under the **settings** (looks like a gear) dropdown select **Security**. 
 1.	Select **GTM Sportswear – Development Group** in the drop down list on the left hand side of the page.
 1.	Select **Members** and verify that your name is included on the list of members.
+
+![Screenshot Cannot Display](../images/SetupComVerifyPermissions.png "Visual to help find security menu")
     
 ### Clone the Project
 
@@ -35,6 +37,8 @@ Now Open Visual Studio 2017. In the top right hand corner of Visual Studio is a 
 1.  Double click on **GTMSportswear** in the **Solution Explorer**. This sets it as the default startup project.
 1.  Visual Studio may ask you if you want to update the Typescript version in your project to match the current version. Select **no**. We do not transpile typescript through Visual Studio, we instead use seperate build tools (setup below) through a terminal.
 
+![Screenshot Cannot Display](../images/SetupComCloneProject.png "Visual of cloning gtm project")
+
 ### Remove Gtm.Web from Visual Studios Build List
 
 Next you will want to remove **Gtm.Web** from the list of projects to build while debugging. This is because **Gtm.Web** has not been configured to ignore Typescript files while building in Visual Studio, resulting in build errors. 
@@ -46,6 +50,7 @@ Next you will want to remove **Gtm.Web** from the list of projects to build whil
 By default, Windows may prevent Visual Studio’s emulator from displaying the website through localhost. This problem can be fixed by changing a setting through Window’s control panel.
 1.	Go to **Control Panel ->> Programs ->> Programs and Features ->> Turn Windows features on or off ->> Internet Information Services**.
 1.	Activate **Internet Information Services**.
+
 ![Screenshot Cannot Display](../images/SetupComWindowsSettingFix.png "Visual of Window's setting that must be changed")
     
 ### Install Web Dependancies
