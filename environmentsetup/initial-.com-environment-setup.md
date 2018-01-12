@@ -6,8 +6,6 @@ It's important to make sure the correct components are included with your Visual
 1.	Download Visual studio Professional 2017 here: https://www.visualstudio.com/downloads/.
 1.  The Visual Studio installer will direct you to an **Installing Visual Studio** screen. You can select additional components to include with the Visual Studio core editor. Don't deselect any components selected by default.
 1.	Make sure the following are selected under the **Workloads** tab of the **Installing Visual Studio** screen
-    *	.NET desktop development
-    *	Desktop development with C++
     *	ASP.NET and web development
     *	Azure development
     *	.NET Core cross-platform development
@@ -35,7 +33,7 @@ Now Open Visual studio 2017. In the top right hand corner of Visual Studio is a 
 1.	From the new view you can select the **gtm ->> gtm** project and clone it to a destination of your choice (the default location is fine).
 1.  Once the project has finished downloading, it will be automatically selected and appear in the **Solution Explorer**.
 1.  Double click on **GTMSportswear** in the **Solution Explorer**. This sets it as the default startup project.
-1.  Visual Studio may ask you if you want to update the Typescript version in your project to match the current version. Select **no**. We do not transpile typescript through Visual Studio, we instead use seperate build tools (setup below) through Window's Command Prompt.
+1.  Visual Studio may ask you if you want to update the Typescript version in your project to match the current version. Select **no**. We do not transpile typescript through Visual Studio, we instead use seperate build tools (setup below) through a terminal.
 
 ### Remove Gtm.Web from Visual Studios Build List
 
@@ -52,7 +50,7 @@ By default, Windows may prevent Visual Studio’s emulator from displaying the w
 ### Install Web Dependancies
 
 The GTMSportswear project has several web dependancies that are not tracked through source control. This is because they can be easily installed in your local environment with npm. 
-1. Open Window's Command Prompt and change the working directory to **\<gtm_repository\>\GTMSportswear.com**. 
+1. Open a terminal, such as Window's Command Prompt, and change the working directory to **\<gtm_repository\>\GTMSportswear.com**. 
 1. Run **npm install**.
 1. If Grunt is not installed, run **npm install grunt --save-dev**.
 1. Install the Grunt command line interface globally with **npm install -g grunt-cli**.
@@ -60,7 +58,7 @@ The GTMSportswear project has several web dependancies that are not tracked thro
    
 ### Run the Emulator
 
-Finally, check to see that the GTM website can be emulated through the Visual Studio debugger.
+Finally, check to see that the GTM website runs in localhost through the Visual Studio debugger.
 1. Run **grunt** from the command line.
 1. From Visual Studio press **F5** or alternately press the **green play button** at the top-center of Visual Studio.
 1. A locally hosted website should appear in your browser that resembles https://gtmsportswear.com/.
