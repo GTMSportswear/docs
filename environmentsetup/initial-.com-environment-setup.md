@@ -25,7 +25,7 @@ Once Visual Studio 2017 has been successfully installed, a Visual Studio Team Se
     
 ### Clone the Project
 
-Now Open Visual studio 2017. In the top right hand corner of Visual Studio is a prompt to sign in as a user. 
+Now Open Visual Studio 2017. In the top right hand corner of Visual Studio is a prompt to sign in as a user. 
 1.	Sign in using your work email and password.
 1.	If your account has been given proper permissions you should now be able to access GTM projects through the **Team Explorer** window. 
 1.	Select the **green connection icon** at the top of the **Team Explorer** window.
