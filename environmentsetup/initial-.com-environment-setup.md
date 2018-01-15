@@ -9,6 +9,7 @@ It's important to make sure the correct components are included with your Visual
     *	ASP.NET and web development
     *	Azure development
     *	.NET Core cross-platform development
+    * Optional: Desktop development with C++ (allows you to quickly include front-end dependancies with NPM Install)
 1.	These components should be added under the **Individual Components** tab
     *	Python 3 64-bit (3.6.3)
     *	Windows 8.1 SDK
@@ -57,7 +58,7 @@ By default, Windows may prevent Visual Studio’s emulator from displaying the w
 
 The GTMSportswear project has several web dependancies that are not tracked through source control. This is because they can be easily installed in your local environment with npm. 
 1. Open a terminal, such as Window's Command Prompt, and change the working directory to **\<gtm_repository\>\GTMSportswear.com**. 
-1. Run **npm install**.
+1. If **Desktop development with C++** was included in Visual Studio dependancies: Run **npm install**.
 1. If Grunt is not installed, run **npm install grunt --save-dev**.
 1. Install the Grunt command line interface globally with **npm install -g grunt-cli**.
 1. Install the Karma command line interface globally with **npm install -g karma-cli**.
