@@ -20,3 +20,5 @@ This information can be updated quite often, but is all peer reviewed. If you se
 
 ## New Employee Information
 *To be added.*
+
+* [Setting Up GTMSportswear.com Dev Environment](environmentsetup/initial-.com-environment-setup.md)
