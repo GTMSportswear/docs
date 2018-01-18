@@ -2,17 +2,17 @@
 
 ## Allow PowerShell Scripts to Execute in Windows
 
-Windows 10 does not allow powershell scripts to execute by default. This is a security measure. For our purposes, we need to allow the execution of RemoteSigned scripts. 
+Windows 10 does not allow powershell scripts to execute by default. This is a security measure. You will need to allow the execution of RemoteSigned scripts. 
 1. Open **Windows PowerShell** as an **administrator**.
 1. Run the command **Set-ExecutionPolicy -ExecutionPolicy RemoteSigned**.
 
 ## Install SQL Server PowerShell Module
 
 Executing our database migration script requires the SQL Server PowerShell module.
-1. In the Windows PowerShell run the command **Install-Module -Name SqlServer**.
-1. You will be asked multiple times if you want to continue with the installation. Select yes. 
+1. In the Windows PowerShell, run the command **Install-Module -Name SqlServer**.
+1. You will be asked multiple times if you want to continue with the installation; Select yes. 
   
-## Run the Migration Script
+## Run the Database Migration Script
 
 First you will need to run the migrations with a drop databases flag. This will help ensure a smooth migragtion. The migrations can then be ran without the flag.   
 1. In the Windows Power Shell, change the working directory to **\<cms_repository\>\Web_Admin\deployment_scripts**. 
