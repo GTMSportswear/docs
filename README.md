@@ -22,3 +22,4 @@ This information can be updated quite often, but is all peer reviewed. If you se
 *To be added.*
 
 * [Setting Up GTMSportswear.com Dev Environment](environmentsetup/initial-.com-environment-setup.md)
+* [Performing Database Migrations in the CMS](environmentsetup/deploying-db-migrations-cms.md)
