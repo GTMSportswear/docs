@@ -68,6 +68,7 @@ ORDER BY O.OrderNo ASC;
     * `FULL JOIN` rather than `FULL OUTER JOIN`
 
 ### Spacing & Indentation
+
 * Each major element should be left aligned with one another.
 ```SQL
 -- The high-level structure for all SELECT statements.
@@ -81,6 +82,7 @@ HAVING ...
 ORDER BY ...
 ```
 * Each column expression in the SELECT should be on its own line and indented once under SELECT. Simple column names can share a line, as long as the line width is kept short.
+* Parameters are included in this and should be indented as well.
 * No use of SELECT * is acceptable unless it is used within a subquery as the input for EXISTS.
   * Frankly any use of the * symbol outside of exists and maybe `COUNT(*)` at times should be avoided if possible.
 * Table operators, such as INNER JOIN, should be at the start of a new line and indented.
