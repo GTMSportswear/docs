@@ -14,7 +14,7 @@ This information can be updated quite often, but is all peer reviewed. If you se
 ## [Coding Standards](/codingstandards)
 *To be added.*
 
-* [C# & JavaScript](/codingstandards/JS/READEME.md)
+* [C# & JavaScript](/codingstandards/JS)
 * [SQL](/codingstandards/TSQL/TSQL.md)
 * [Repository Naming Conventions](/codingstandards/repositorynamingconvention.md)
 
