@@ -87,8 +87,6 @@ The `update` directory keeps track of changes that will advance the database fro
 
 ![Embedded Resource](/images/LegacyWebEmbeddedResource.png)
 
-#### How to create migration C# file
-
 All C# migration files will import [FluentMigrator](https://github.com/fluentmigrator/fluentmigrator). They will also include a *Migration* tag that is formatted according to the date and time of the change. This formatting ensures that migrations tags are unique. 
 
 ```C#
