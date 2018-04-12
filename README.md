@@ -14,9 +14,10 @@ This information can be updated quite often, but is all peer reviewed. If you se
 ## [Coding Standards](/codingstandards)
 *To be added.*
 
-* [C# & JavaScript](/#)
+* [C# & JavaScript](/codingstandards/JS)
 * [SQL](/codingstandards/TSQL/TSQL.md)
 * [Repository Naming Conventions](/codingstandards/repositorynamingconvention.md)
+* [Database Continuous Integration](/codingstandards/continuousintegration.md)
 
 ## New Employee Information
 *To be added.*
