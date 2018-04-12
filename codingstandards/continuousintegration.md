@@ -74,6 +74,17 @@ A script is loaded with the command `Execute.EmbeddedScript("Database.Install.Ta
 **When creating a new file or changing a filename make sure to add the script to the C# migration file.** When changing a file verify that it is in the C# migration file. 
 
 > **Note: All scripts should be rerunnable. i.e. if a create table script is ran on a database that already has that table, that command will be ignored.**
+```sql
+-- Example of rerunnable script
+IF NOT EXISTS(
+   SELECT *
+   FROM sys.tables t
+   WHERE t.[object_id] = OBJECT_ID(N'dbo.TableName'))
+-- The following will only run if the table does not exist in the database.
+BEGIN
+   -- Create table
+END
+```
 
 ### 2. Modify Update directory
 
