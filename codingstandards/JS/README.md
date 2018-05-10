@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+1. [JS/TS Syntax](#jsts-syntax)
 1. [Why TypeScript?](#why-typescript)
 1. [TypeScript Compilation](#typescript-compilation)
 1. [TypeScript Entry Points](https://github.com/GTMSportswear/docs/blob/master/codingstandards/JS/typescriptentrypoints.md)
@@ -11,11 +12,17 @@
 1. [Retrieving Data](#retrieving-data)
 1. Documentation Comments
 1. TypeScript Utilities
-  1. Solution Utilities
-  1. GitHub Utilities
+   1. Solution Utilities
+   1. GitHub Utilities
 1. Asynchronous TypeScript
 1. Unit Testing
 1. Integration Testing
+
+## JS/TS Syntax
+### Tripple Equals (===)
+Use Tripple Equals (===) and **NOT** Double Equals (==).
+
+Tripple Equals uses strict equality. This means that in order to return `true`, values must be the same value **AND** the same type.
 
 ## Why TypeScript?
 We made a team decision to move away from pure JavaScript and instead use TypeScript. The main driver behind this was to allow us to add stricter type checking to our code and give us better intellisense during the coding process.
