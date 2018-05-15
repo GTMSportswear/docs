@@ -70,3 +70,27 @@ Finally, check to see that the GTM website runs in localhost through the Visual 
 1. From Visual Studio press **F5** or alternately press the **green play button** at the top-center of Visual Studio.
 1. A locally hosted website should appear in your browser that resembles https://gtmsportswear.com/.
     
+### TreamStore FrontEnd Setup
+
+For the TeamStore there shouldn't be a need for Grunt or Bower as they've switched it over to npm script use.
+
+1. Open a shell and navigate to the local git repository for TeamStore, cd into `presentation\GTM.TeamStore.Web`
+2. Run the command `npm install`
+3. Once finished, run the command `npm run dev`.
+
+You can now start debugging in Visual Studio. The dev script includes compiling of css, typescript, javascript, and moving these files to the components folder. The script will perform a watch over these for changes.
+
+#### Other useful Scripts
+After Setting up your environment as above, there are a few other useful scripts that can be used:
+
+1. `npm test`
+2. `npm run sync`
+
+### Workstation Setup Gotchas
+    - Make sure Tools → Options → Projects and Solutions → Web Projects → 'Use the 64 bit version of IIS Express' checkbox is checked.
+    - Open Gtmsportswear.com project folder in File Explorer → Go to bin folder → Make sure the MvxSockx64.dll and MvxSockNx64.dll are both in the folder, if not, grab them from the parent folder and copy them in.
+
+1. This will install all the node packages that the TeamStore solution requires.
+2. This is identical to what the grunt command used to do, but is now funneled through npm only.
+3. This will run the front-end karma tests from the command line. To run npm run dev with the test script, you will need to open two separate shells or two separate shell tabs (cmder).
+4. This is used for developers that wish to use browsersync. The sync script will run the dev script, along with running browsersync on localhost:3000.
