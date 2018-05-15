@@ -87,8 +87,8 @@ After Setting up your environment as above, there are a few other useful scripts
 2. `npm run sync`
 
 ### Workstation Setup Gotchas
-    - Make sure Tools → Options → Projects and Solutions → Web Projects → 'Use the 64 bit version of IIS Express' checkbox is checked.
-    - Open Gtmsportswear.com project folder in File Explorer → Go to bin folder → Make sure the MvxSockx64.dll and MvxSockNx64.dll are both in the folder, if not, grab them from the parent folder and copy them in.
+   - Make sure Tools → Options → Projects and Solutions → Web Projects → 'Use the 64 bit version of IIS Express' checkbox is checked.
+   - Open Gtmsportswear.com project folder in File Explorer → Go to bin folder → Make sure the MvxSockx64.dll and MvxSockNx64.dll are both in the folder, if not, grab them from the parent folder and copy them in.
 
 1. This will install all the node packages that the TeamStore solution requires.
 2. This is identical to what the grunt command used to do, but is now funneled through npm only.
