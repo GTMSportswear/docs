@@ -1,10 +1,11 @@
-# Running Database Migrations in the CMS Project
+# Running Database Migrations
 
 ## Allow PowerShell Scripts to Execute in Windows
 
 Windows 10 does not allow powershell scripts to execute by default. This is a security measure. You will need to allow the execution of RemoteSigned scripts. 
 1. Open **Windows PowerShell** as an **administrator**.
 1. Run the command **Set-ExecutionPolicy -ExecutionPolicy RemoteSigned**.
+1. If you're running these command on your Virtual Machine you may have to use the CurrentUser scope. **Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy**
 
 ## Install SQL Server PowerShell Module
 
@@ -30,3 +31,9 @@ First you will need to run the migrations with a drop databases flag. This will 
 1. Rebuild the entire Web_Admin solution.
 1. Run **./DeployDatabaseMigrations.ps1** without the drop databases flag. 
 1. If everything is working correctly, the PowerShell output will show the database associated with the migration tag as being migrated (i.e. Should be able to find the migration tag). 
+
+
+## Errors during Database Migration Script
+
+**localdb login failed**
+1. If you run into localdb login errors you'll want to connect to the Database Server "(localdb)\MSSQLLocaldb" from your SQL Server Management Studio. This should automatically add a login for your windows account to the security login users.
