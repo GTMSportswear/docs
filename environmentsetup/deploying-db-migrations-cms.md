@@ -37,13 +37,7 @@ First you will need to run the migrations with a drop databases flag. This will 
 
 **localdb login failed**
 Migrate.exe : !!! Cannot open database "TestDb" requested by the login. The login failed.
-At C:\JeffreyCodeRepo\cms\Web_Admin\deployment_scripts\DeployDatabase.ps1:37 char:3
-+   & $PathToMigrate -a $BinDirectory\$Dll.dll -db SqlServer2012 -conn  ...
-+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (!!! Cannot open...e login failed.:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-Login failed for user 'DESKTOP-RKFMGAJ\VMDev'.
+At C:\JeffreyCodeRepo\cms\Web_Admin\deployment_scripts\DeployDatabase.ps1:37 char:3 Login failed for user 'DESKTOP-RKFMGAJ\VMDev'.
 
 1. If you run into this localdb login error you'll want to connect to the database Server "(localdb)\MSSQLLocaldb" from your SQL Server Management Studio. This should automatically add a login for your windows account to the security login users.
 
