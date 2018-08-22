@@ -37,12 +37,11 @@ First you will need to run the migrations with a drop databases flag. This will 
 
 **localdb login failed**
 Migrate.exe : !!! Cannot open database "TestDb" requested by the login. The login failed.
-At C:\JeffreyCodeRepo\cms\Web_Admin\deployment_scripts\DeployDatabase.ps1:37 char:3
-+   & $PathToMigrate -a $BinDirectory\$Dll.dll -db SqlServer2012 -conn  ...
-+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (!!! Cannot open...e login failed.:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-Login failed for user 'DESKTOP-RKFMGAJ\VMDev'.
+At C:\JeffreyCodeRepo\cms\Web_Admin\deployment_scripts\DeployDatabase.ps1:37 char:3 Login failed for user 'DESKTOP-RKFMGAJ\VMDev'.
 
 1. If you run into this localdb login error you'll want to connect to the database Server "(localdb)\MSSQLLocaldb" from your SQL Server Management Studio. This should automatically add a login for your windows account to the security login users.
+
+**Invoke-Sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser**
+The error Invoke-Sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser, Version=14.100.0.0 seems to be caused by a 32/64 bit versioning problem on each developers computer.
+There's an online discussion here about the problem. https://social.technet.microsoft.com/Forums/office/en-US/7a71121c-83b1-49b4-ad30-3a5f20e7afbf/smo-2017-microsoftsqlserverbatchparserdll-load-error?forum=sqlsmoanddmo
+The way around this is to use the working version of Powershell ISE on your local computer. If the 32 bit version (x86) isn't working you have to run the Powershell ISE in the 64 bit version instead.
