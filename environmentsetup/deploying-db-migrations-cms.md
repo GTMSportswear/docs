@@ -5,7 +5,7 @@
 Windows 10 does not allow powershell scripts to execute by default. This is a security measure. You will need to allow the execution of RemoteSigned scripts. 
 1. Open **Windows PowerShell** as an **administrator**.
 1. Run the command **Set-ExecutionPolicy -ExecutionPolicy RemoteSigned**.
-1. If you're running these command on your Virtual Machine you may have to use the CurrentUser scope. **Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy**
+1. If you're running these command on your Virtual Machine or having issues with the previous command you may have to use the CurrentUser scope. **Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned**
 
 ## Install SQL Server PowerShell Module
 
