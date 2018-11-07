@@ -15,7 +15,12 @@ Executing our database migration script requires the SQL Server PowerShell modul
   
 ## Run the Database Migration Script
 
-First you will need to run the migrations with a drop databases flag. This will help ensure a smooth migragtion. The migrations can then be ran without the flag.   
+First you will need to create the TestDB and TestDBM3 databases on the SQL Server (localdb)\MSSQLLocaldb. Once you've connected to the server (localdb)\MSSQLLocaldb in SQL Server Management Studio using Windows Authentication you'll then execute these two SQL Scripts below.
+CREATE DATABASE TestDB;
+CREATE DATABASE TestDBM3;
+
+After creating the databases move onto the steps below.
+
 1. In the Windows Power Shell, change the working directory to **\<cms_repository\>\Web_Admin\deployment_scripts**. 
 1. Run **./DeployDatabaseMigrations.ps1 -DropDatabases 1**.
 1. Verify that no red error text was generated in the PowerShell output.
