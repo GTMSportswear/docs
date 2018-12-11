@@ -41,12 +41,21 @@ After creating the databases move onto the steps below.
 ## Errors during Database Migration Script
 
 **localdb login failed**
+
 Migrate.exe : !!! Cannot open database "TestDb" requested by the login. The login failed.
 At C:\JeffreyCodeRepo\cms\Web_Admin\deployment_scripts\DeployDatabase.ps1:37 char:3 Login failed for user 'DESKTOP-RKFMGAJ\VMDev'.
 
-1. If you run into this localdb login error you'll want to connect to the database Server "(localdb)\MSSQLLocaldb" from your SQL Server Management Studio. This should automatically add a login for your windows account to the security login users.
+1. If you run into this localdb login error you'll want to connect to the database Server "(localdb)\MSSQLLocaldb" from your SQL Server Management Studio. This should automatically add a login for your windows account to the security login users. If you still get the error you will want to create the databases manually that are throwing the error.
 
 **Invoke-Sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser**
+
 The error Invoke-Sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser, Version=14.100.0.0 seems to be caused by a 32/64 bit versioning problem on each developers computer.
 There's an online discussion here about the problem. https://social.technet.microsoft.com/Forums/office/en-US/7a71121c-83b1-49b4-ad30-3a5f20e7afbf/smo-2017-microsoftsqlserverbatchparserdll-load-error?forum=sqlsmoanddmo
 The way around this is to use the working version of Powershell ISE on your local computer. If the 32 bit version (x86) isn't working you have to run the Powershell ISE in the 64 bit version instead.
+
+**Cannot connect to (LocalDB)\MSSQLLocalDB -> Login failed for user 'User-PC\User'**
+
+It requires updating a ParentInstance Value with an invalid Value and then updating it back to the correct Value that was set before. (MSSQL13E.LOCALDB -> MSSQL13.1E.LOCALDB -> MSSQL13E.LOCALDB) I've also seen the Windows API LogSqlDiagRec reach a "Stopped" state after a long period of time. So waiting over night would possibly fix the error as well. You can view this error in the Windows Event Viewer (Windows Logs/Application). Error = "Windows API call LogSqlDiagRec returned error code: 0. Windows system error message is: The operation completed successfully. Cannot open database "TestDb" requested by the login. The login failed."
+To quickly hack a fix you'll want to update the HKEY_CURRENT_USER\Software\Microsoft\Microsoft SQL Server\UserInstances\ParentInstance value MSSQL13E.LOCALDB to MSSQL13.1E.LOCALDB and back to MSSQL13E.LOCALDB again. This invalid version "13.1" forces MSSQLLocalDB into a Stopped State because it's the wrong version when trying to connect in SSMS the next time. This allows you to run the commands in CMD (sqllocaldb stop mssqllocaldb, sqllocaldb delete mssqllocaldb, sqllocaldb start mssqllocaldb). Once these commands are ran successfully you can login to the server (localdb)\MSSQLLocalDB through SSMS.
+
+Related Link: https://stackoverflow.com/questions/36950078/cannot-connect-to-localdb-mssqllocaldb-login-failed-for-user-user-pc-user
