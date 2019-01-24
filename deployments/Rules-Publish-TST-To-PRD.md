@@ -35,10 +35,8 @@
 ![Launch Design Studio PCM_DEV](../images/DesignStudioPcmDevDesignUiConnection.png)
 
 2. Make sure the M3 Data Source Database is **M3FDBDEV**
-![M3 Connection Fix](../images/M3ConnectionDetails.png)
 
 3. Make sure the ActiveConnectionString Data Source Server is **trainingdb.igtm.com**
-![ActiveConnectionString Connection Fix](../images/ActiveConnectionStringConnectionDetails.png)
 
 4. Make sure *Tracing* is set to True after the PRD publish. This forces the configurator to log trace files for debugging.
 ![Tracing Setting for PRD](../images/TracingSettingForPRD.png)
