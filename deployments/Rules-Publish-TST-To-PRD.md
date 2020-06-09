@@ -19,7 +19,7 @@
 ![Restore CodeDev To TestModel](../images/RestoreCodeDevToTestModel.png)
 
 6. If any EP or SP code changes are needed you'll want to deploy the pcm-services release to PRD before the rules in the event the release fails. This will insure the Rules code isn't deployed into PRD alone waiting on the pcm-services DevOps release to succeed.
-https://gtmsportswear.visualstudio.com/pcm-services/_release?definitionId=1
+https://dev.azure.com/championteamwear/pcm-services/_release?_a=releases&view=mine&definitionId=1
 
 7. Using SQL Server Management Studio connect to the **TDCI01SQLPROD** database server
 8. Execute (*"Start Job at Step..."*) the SQL Agent Job *“PCM Maintenance.Restore CodeDev to PROD”*
